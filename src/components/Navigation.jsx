@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import resume from './../assets/Godwin-Inyene-resume.pdf'
 import {LuMenu} from 'react-icons/lu';
 import { Link } from 'react-scroll';
 const Navigation = () => {
@@ -25,11 +25,9 @@ const Navigation = () => {
     }
     const nav_items = [
        {id:0,title:"Home"},
-       { id:1,title:"Services"},
+       { id:1,title:"Benefits"},
        {id:2,title:"Portfolio"},
        {id:3,title:"Resume"},
-       {id:4,title:"Client"},
-       {id:5,title:"Blog"},
        {id:6,title:"Contact"}
     ]
 
@@ -37,8 +35,8 @@ const Navigation = () => {
     <div className={`header bg-primary ${isFixedClass ? 'animate-fadeInDown' :''}`} style={isFixedClass ? fixedHeader : {}}>
        <div className='max-w-[1140px] mx-auto w-full'> 
             <nav className='flex items-center  justify-between flex-wrap lg:flex-nowrap px-5 py-5 relative'>
-                <a href="" className='py-2 mr-4'>
-                    <img src={logo} alt="" />
+                <a href="" className='py-2  text-4xl text-gold font-semibold'>
+                    GI
                 </a>
 
                 {/*Mobile Nav Icon */}
@@ -54,7 +52,7 @@ const Navigation = () => {
                         </li>
                         ))}
                     </ul>
-                    <a href="#" className='hidden lg:inline-block bg-gold leading-[46px]  rounded-sm font-semibold px-8 border-2 border-transparent ml-4 ps-8 pe-8 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold'>Download Cv</a>
+                    <a href={resume} download={true} className='hidden lg:inline-block bg-gold leading-[46px]  rounded-sm font-semibold px-8 border-2 border-transparent ml-4 ps-8 pe-8 transition-all duration-300 ease-in hover:border-gold hover:bg-transparent hover:text-gold'>Download Cv</a>
                 </div>
             </nav>
        </div>

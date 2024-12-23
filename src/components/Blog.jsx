@@ -1,7 +1,7 @@
 import React from 'react';
-import img_22 from '../assets/img-22.jpg';
-import img_23 from '../assets/img-23.jpg';
-import img_24 from '../assets/img-24.jpg';
+// import img_22 from '../assets/img-22.jpg';
+// import img_23 from '../assets/img-23.jpg';
+// import img_24 from '../assets/img-24.jpg';
 import {FaUser}    from 'react-icons/fa';
 import { FaComment } from 'react-icons/fa';
 import {AiFillEye} from 'react-icons/ai'
@@ -24,9 +24,9 @@ const Blog = () => {
                 <div className='w-full lg:w-[33%] px-3 mt-6'>
                     <div className='animate-slideInUp' data-aos="fade-up" data-aos-offset="300">
                         <div className='blog__item-iner'>
-                            <div className='blog__img'>
+                            {/* <div className='blog__img'>
                                 <img src={img_22} alt="" className='w-full' />
-                            </div>
+                            </div> */}
 
                             <div className='p-8 bg-[rgba(255,255,255,0.1)]'>
                                 <ul className='flex flex-wrap gap-5 mb-4'> 
@@ -68,9 +68,9 @@ const Blog = () => {
                 <div className='w-full lg:w-[33%] px-3 mt-6'>
                     <div className='animation-slideInUp' data-aos="fade-up" data-aos-offset="300" data-aos-delay="200">
                         <div className='blog__item-iner'>
-                            <div className='blog__img'>
+                            {/* <div className='blog__img'>
                                 <img src={img_23} alt="" className='w-full'/>
-                            </div>
+                            </div> */}
 
                             <div className='p-8 bg-[rgba(255,255,255,0.1)]'>
                                 <ul className='flex flex-wrap gap-5 mb-4'> 
@@ -112,9 +112,9 @@ const Blog = () => {
                 <div className='w-full lg:w-[33%] px-3 mt-6'>
                     <div className='animation-slideInUp' data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
                         <div className='blog__item-iner'>
-                            <div className='blog__img'>
+                            {/* <div className='blog__img'>
                                 <img src={img_24} alt="" className='w-full'/>
-                            </div>
+                            </div> */}
 
                             <div className='p-8 bg-[rgba(255,255,255,0.1)]'>
                                 <ul className='flex flex-wrap gap-5 mb-4'> 

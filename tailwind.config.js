@@ -9,6 +9,7 @@ export default {
       },
       colors:{
         gold:"#FFB400",
+        primary: '#1F2235',
       },
       animation:{
         fadeUp:'fadeUp 1s linear',

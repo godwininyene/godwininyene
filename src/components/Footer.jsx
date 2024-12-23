@@ -1,9 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-import { FaBasketballBall } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaBehance } from 'react-icons/fa';
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -11,69 +8,61 @@ const Footer = () => {
         <div className='max-w-[540px] lg:max-w-[1140px] mx-auto px-3'> 
            
             <div className='footer-content  py-16 text-center' data-aos='fade-up'>
-                <a href="" className='inline-block py-2 mr-4 text-center mb-7'>
-                    <img src={logo} alt=""  className='inline'/>
+                <a href="" className='py-2 inline-block mb-2 text-4xl text-gold font-semibold'>
+                    GI
                 </a>
                 <ul className='flex  flex-wrap items-center justify-center ml-auto mb-5'>
                     <li>
-                        <a href="" className='text-base font-bold text-white py-8 px-4'>Home</a>
+                         <Link to={`Home`} activeClass={'text-gold'}spy={true} smooth={true} offset={0} duration={1000}  className='cursor-pointer text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-2 lg:px-4'>Home</Link>
                     </li>
 
                     <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4 '>Services</a>
+                        <Link to={`Benefits`} activeClass={'text-gold'}spy={true} smooth={true} offset={0} duration={1000}  className='cursor-pointer text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-2 lg:px-4'>Benefits</Link>
                     </li>
 
                     <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4'>Portfolio</a>
+                        <Link to={`Portfolio`} activeClass={'text-gold'}spy={true} smooth={true} offset={0} duration={1000}  className='cursor-pointer text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-2 lg:px-4'>Portfolio</Link>
                     </li>
 
                     <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4'>Resume</a>
-                    </li>
-
-                    <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4'>Client</a>
-                    </li>
-
-                    <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4'>Blog</a>
+                        <Link to={`Resume`} activeClass={'text-gold'}spy={true} smooth={true} offset={0} duration={1000}  className='cursor-pointer text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-2 lg:px-4'>Resume</Link>
                     </li>
                     <li>
-                        <a href="" className='text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-4'>Contact</a>
+                        <Link to={`Contact`} activeClass={'text-gold'}spy={true} smooth={true} offset={0} duration={1000}  className='cursor-pointer text-base font-bold transition-all duration-300 text-white hover:text-gold py-8 px-2 lg:px-4'>Contact</Link>
                     </li>
                 </ul>
 
                 <ul className='flex flex-wrap items-center justify-center ml-auto mb-5 gap-5'>
                     <li className='flex-shrink-0'>
-                        <a href="" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
-                           <FaBasketballBall />
-                        </a>
-                    </li>
-
-                    <li className='flex-shrink-0'>
-                        <a href="" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
+                        <a href="https://www.linkedin.com/in/godwin-inyene-598714233 " className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
                            <FaLinkedin />
                         </a>
                     </li>
 
                     <li className='flex-shrink-0'>
-                        <a href="" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
-                           <FaInstagram />
+                        <a href="https://github.com/godwininyene" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
+                           <FaGithub />
                         </a>
                     </li>
 
                     <li className='flex-shrink-0'>
-                        <a href="" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
-                           <FaBehance />
+                        <a href="https://web.facebook.com/godwin.inyene.5/" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
+                           <FaFacebook />
+                        </a>
+                    </li>
+
+                    <li className='flex-shrink-0'>
+                        <a href="mailto:godwinhigh2@gmail.com" className='text-base font-bold inline-grid place-items-center bg-gold w-10 h-10 rounded-full'>
+                           <FaEnvelope />
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div className='footer-copy-right py-4 border-t border-t-[rgba(255,255,255,0.1)]'>
-                <p className='text-center text-white'>
-                    All Right Reserved. Designed and Developed by Gereal-Tech <br />
-                    Template Credit : PixiansStudioUIUX
+                <p className='text-center text-slate-300'>
+                    All Right Reserved. Designed and Developed by Godwin Inyene <br />
+                   
                 </p>
             </div>
         </div>
