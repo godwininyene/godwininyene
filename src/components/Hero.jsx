@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import me from './../assets/me.png'
-import resume from './../assets/Godwin-Inyene-resume.pdf'
+import resume from './../assets/Godwin_Inyene_Resume-1.pdf'
 
 const Hero = () => {
   return (

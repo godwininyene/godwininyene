@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from './../assets/Godwin-Inyene-resume.pdf'
+import resume from './../assets/Godwin_Inyene_Resume-1.pdf'
 import {LuMenu} from 'react-icons/lu';
 import { Link } from 'react-scroll';
 const Navigation = () => {

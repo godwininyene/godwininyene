@@ -10,7 +10,8 @@ import hezmart_1 from './../assets/hezmart_1.png'
 import hezmart_2 from './../assets/hezmart_2.png'
 import realword_1 from './../assets/real-world-1.png'
 import realword_2 from './../assets/real-world-2.png'
-import baller_1 from './../assets/baller-1.png'
+import winsubz_1 from './../assets/winsubz_1.png'
+import winsubz_2 from './../assets/winsubz_2.png'
 import baller_2 from './../assets/baller-2.png'
 import ee_1 from './../assets/ee_1.png'
 import ee_2 from './../assets/ee_2.png'
@@ -33,13 +34,22 @@ const projects = [
     images: [daylad_1, daylad_2],
     link: "https://dayladexpo.com.ng/"
   },
+  // {
+  //   name: "Ballers Trade – Crypto & Gift Card Trading Platform",
+  //   purpose: "A secure trading platform for cryptocurrency and gift card transactions.",
+  //   role: "Designed and developed the full application including customer systems, admin controls, real-time notifications, and fast, secure transaction flows.",
+  //   stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS",
+  //   images: [baller_1, baller_2],
+  //   link: "https://ballers-trade.dayladexpo.com.ng/"
+  // },
+
   {
-    name: "Ballers Trade – Crypto & Gift Card Trading Platform",
-    purpose: "A secure trading platform for cryptocurrency and gift card transactions.",
-    role: "Designed and developed the full application including customer systems, admin controls, real-time notifications, and fast, secure transaction flows.",
-    stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS",
-    images: [baller_1, baller_2],
-    link: "https://ballers-trade.dayladexpo.com.ng/"
+    name: "Winsubz – VTU & Data Vending Platform",
+    purpose: "A modern VTU platform built for affordable data subscriptions, airtime recharge, cable TV payments, electricity bill payments, and reseller services.",
+    role: "Designed and developed the full platform from scratch including user dashboards, wallet funding systems, automated VTU processing, admin analytics, transaction management, push notifications, referral systems, and responsive UI/UX.",
+    stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS, Moniepoint, OneSignal",
+    images: [winsubz_1, winsubz_2],
+    link: "https://winsubz.com"
   },
   {
     name: "The Real World – Cryptocurrency Investment Platform",
@@ -79,7 +89,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <section className='bg-primary py-20 lg:py-28 overflow-hidden' id='Portfolio'>
-      <div className='max-w-[540px] lg:max-w-[1140px] mx-auto'> 
+      <div className='max-w-[540px] lg:max-w-[1140px] mx-auto'>
 
         {/* ===== Section Header ===== */}
         <div className='text-center text-white'>
@@ -92,7 +102,7 @@ const Portfolio = () => {
           </h2>
 
           <p className='max-w-3xl mx-auto mb-12 text-gray-200'>
-            I designed and developed all the projects below from start to finish — handling everything from frontend interfaces 
+            I designed and developed all the projects below from start to finish — handling everything from frontend interfaces
             to backend systems, APIs, databases, payments, and deployment.
           </p>
         </div>
@@ -102,18 +112,18 @@ const Portfolio = () => {
         <div className='relative flex flex-col lg:flex-row flex-wrap justify-between'>
           {projects.map((project, index) => (
             <div key={index} className='w-full lg:w-[32%] text-center flex-shrink-0 mb-10'>
-              
+
               <div className="bg-gradient-to-br from-green-400 via-teal-500 to-blue-600 p-2 overflow-hidden relative rounded-lg">
 
-                <img 
-                  src={project.images[0]} 
-                  alt={project.name} 
+                <img
+                  src={project.images[0]}
+                  alt={project.name}
                   className='max-w-full h-auto inline rounded-lg'
                 />
 
-                <img 
-                  src={project.images[1]} 
-                  alt={project.name} 
+                <img
+                  src={project.images[1]}
+                  alt={project.name}
                   className='max-w-full h-auto inline-block mb-1 -mt-12 rounded-lg'
                 />
 
@@ -130,9 +140,9 @@ const Portfolio = () => {
                   </p>
                 </div>
 
-                <a 
-                  href={project.link} 
-                  target='_blank' 
+                <a
+                  href={project.link}
+                  target='_blank'
                   rel="noreferrer"
                   className='w-full inline-block mt-3 text-center font-semibold border bg-transparent border-gold text-gold rounded-lg py-4 px-8 transition-all duration-300 hover:bg-gold hover:text-white'
                 >
