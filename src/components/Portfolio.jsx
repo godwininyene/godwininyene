@@ -16,8 +16,19 @@ import baller_2 from './../assets/baller-2.png'
 import ee_1 from './../assets/ee_1.png'
 import ee_2 from './../assets/ee_2.png'
 
+import shopgo_1 from './../assets/shopgo-1.png'
+import shopgo_2 from './../assets/shopgo-2.png'
+
 
 const projects = [
+  {
+    name: "YourShopGo – Grocery Shopping Platform",
+    purpose: "A subscription-powered grocery concierge platform that simplifies grocery shopping by allowing customers to submit shopping requests, receive quotations, approve orders, make payments, and track deliveries.",
+    role: "Architected and developed the complete platform, including subscription management, quotation workflows, Stripe payment processing, webhook-driven billing, order lifecycle management, in-app/email notifications, analytics dashboards, and administrative tools for managing users, orders, subscriptions, quotations, and refunds.",
+    stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Stripe, Tailwind CSS, Nodemailer",
+    images: [shopgo_1, shopgo_2],
+    link: "https://www.yourshopgo.co.uk/"
+  },
   {
     name: "Hezmart – E-Commerce Platform",
     purpose: "A full-featured e-commerce platform built to support both web and mobile shopping experiences.",
@@ -25,6 +36,14 @@ const projects = [
     stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS, Paystack, Crypto Payments",
     images: [hezmart_1, hezmart_2],
     link: "https://hezmart.com"
+  },
+   {
+    name: "Winsubz – VTU & Data Vending Platform",
+    purpose: "A modern VTU platform built for affordable data subscriptions, airtime recharge, cable TV payments, electricity bill payments, and reseller services.",
+    role: "Designed and developed the full platform from scratch including user dashboards, wallet funding systems, automated VTU processing, admin analytics, transaction management, push notifications, referral systems, and responsive UI/UX.",
+    stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS, Moniepoint, OneSignal",
+    images: [winsubz_1, winsubz_2],
+    link: "https://winsubz.com"
   },
   {
     name: "Daylad Expo – Booth Booking Platform",
@@ -34,23 +53,8 @@ const projects = [
     images: [daylad_1, daylad_2],
     link: "https://dayladexpo.com.ng/"
   },
-  // {
-  //   name: "Ballers Trade – Crypto & Gift Card Trading Platform",
-  //   purpose: "A secure trading platform for cryptocurrency and gift card transactions.",
-  //   role: "Designed and developed the full application including customer systems, admin controls, real-time notifications, and fast, secure transaction flows.",
-  //   stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS",
-  //   images: [baller_1, baller_2],
-  //   link: "https://ballers-trade.dayladexpo.com.ng/"
-  // },
 
-  {
-    name: "Winsubz – VTU & Data Vending Platform",
-    purpose: "A modern VTU platform built for affordable data subscriptions, airtime recharge, cable TV payments, electricity bill payments, and reseller services.",
-    role: "Designed and developed the full platform from scratch including user dashboards, wallet funding systems, automated VTU processing, admin analytics, transaction management, push notifications, referral systems, and responsive UI/UX.",
-    stack: "React.js, Node.js, Express.js, MySQL, Sequelize, Tailwind CSS, Moniepoint, OneSignal",
-    images: [winsubz_1, winsubz_2],
-    link: "https://winsubz.com"
-  },
+ 
   {
     name: "The Real World – Cryptocurrency Investment Platform",
     purpose: "A crypto investment system supporting deposits, withdrawals, and automated profit tracking.",
@@ -109,11 +113,11 @@ const Portfolio = () => {
 
 
         {/* ===== Projects ===== */}
-        <div className='relative flex flex-col lg:flex-row flex-wrap justify-between'>
+        <div className='relative flex flex-col lg:flex-row flex-wrap justify-center gap-5'>
           {projects.map((project, index) => (
             <div key={index} className='w-full lg:w-[32%] text-center flex-shrink-0 mb-10'>
 
-              <div className="bg-gradient-to-br from-green-400 via-teal-500 to-blue-600 p-2 overflow-hidden relative rounded-lg">
+              <div className="bg-gradient-to-br from-green-400 via-teal-500 to-blue-600 p-2 overflow-hidden relative rounded-lg h-full">
 
                 <img
                   src={project.images[0]}
