@@ -69,7 +69,7 @@ const projects = [
     role: "Developed both frontend and backend, implementing wallet systems, admin controls, transaction monitoring, and encrypted data handling.",
     stack: "React.js, Node.js, Express.js, MySQL, Sequelize",
     images: [trust_1, trust_2],
-    link: "https://trust-platformfinance.vercel.app/"
+    link: "https://trust-platform-massive-finance.vercel.app/"
   },
   {
     name: "Wavehub – Blogging & Content Platform",
